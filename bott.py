@@ -57,8 +57,8 @@ iden={"MEMBER":"成员","OWNER":"群主大大","ADMINISTRATOR":"管理大人"}
 allow_id={837979619}#primary使用
 
 # lock=threading.Lock()#来个线程锁
-lock_chat=threading.Lock()#再来个线程锁
-AInum=1#临界区资源
+# lock_chat=threading.Lock()#再来个线程锁
+# AInum=1#临界区资源
 
 #line=[]任务线，完全没写
 function={}
