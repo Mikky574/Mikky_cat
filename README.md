@@ -1,5 +1,5 @@
 # Mikky_cat
-本项目主要是用python写了一个qq群聊机器人，项目是基于mirai项目的http-api-v2插件，目标是让所有会python语言的都能搭建一个用python开发的qq机器人。也做得蛮多东西了得，把凯露的代码发出来。具体整理得不太好，感觉还是有点乱，最后干脆摆了，反正也没啥人关注，就把ReadMe写得详细点就行了。
+本项目主要是用python写了一个qq群聊机器人，项目是基于mirai项目的http-api-v2插件，目标是让所有会python语言的都能搭建一个用python开发的qq机器人。也做得蛮多东西了得，把凯露的代码发出来。具体整理得不太好，感觉还是有点乱，最后干脆摆了，反正也没啥人关注，就把ReadMe写得详细点就行了。作者是新手，弄得不太好，也还在学习当中。
 
 具体而言就是绑定一个qq机器人号，向机器人账号发送信息mirai可以收到信息，并通过http-api插件把信息传到自己写的python脚本上，python处理相关信息后将得到应该回复的消息，再将消息通过mirai发送出去。
 
@@ -42,9 +42,10 @@
 
 在成功运行上http-api插件后，会在mirai-mcl\config\net.mamoe.mirai-api-http路径下生成setting.yml文件，查看文件里面http的端口，以及verifyKey。
 
-在文件bott.py的这里，将作者的port以及authKey改成使用者的（~~~话说，把自己使用着的密钥放上去真的好么~~~）
+在文件bott.py的这里，将作者的port以及authKey改成使用者的（~~话说，把自己使用着的密钥放上去真的好么~~）
 
 ```
+python
 class bot():
     def __init__(self,address,port=8080,authKey="INITKEYTdFgtK4P"):
         self.conn = http.client.HTTPConnection(address,port)
@@ -54,3 +55,7 @@ class bot():
 
 ## python3使用到的相关的库汇总
 
+```
+python
+pip install requests asyncio schedule openai
+```
