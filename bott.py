@@ -1,4 +1,4 @@
-import psycopg2
+# import psycopg2
 import copy
 import os
 import re
