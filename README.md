@@ -38,5 +38,19 @@
 
 [http-v2插件的官方文档说明](https://docs.mirai.mamoe.net/mirai-api-http/api/API.html#%E8%8E%B7%E5%8F%96%E7%BE%A4%E6%88%90%E5%91%98%E5%88%97%E8%A1%A8)
 
+### 只需要注意一点，绑定python脚本以及mirai
+
+在成功运行上http-api插件后，会在mirai-mcl\config\net.mamoe.mirai-api-http路径下生成setting.yml文件，查看文件里面http的端口，以及verifyKey。
+
+在文件bott.py的这里，将作者的port以及authKey改成使用者的（~~~话说，把自己使用着的密钥放上去真的好么~~~）
+
+```
+class bot():
+    def __init__(self,address,port=8080,authKey="INITKEYTdFgtK4P"):
+        self.conn = http.client.HTTPConnection(address,port)
+        self.authKey=authKey
+        self.sessionKey=self.bind()
+```
+
 ## python3使用到的相关的库汇总
 
