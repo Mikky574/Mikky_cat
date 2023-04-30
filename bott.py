@@ -186,8 +186,8 @@ build_fo("AI绘画",os.path.join(basePath,"图片素材"))
 
 #写调用openai api的函数
 import openai
-# openai.api_key = "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"#用这个,到4月1日
-openai.api_key = "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"#5月1号到期
+# openai.api_key = "sk-bEix1ubvAB0UzQra8pogT3BlbkFJoPwgd"#用这个,到4月1日
+openai.api_key = "sk-luZ8dbDB6q7uLoGAF5uiT3BlbkFJSCLenBn"#5月1号到期
 
 #初始设定
 # initial_prompt = "请使用女性化的、口语化的、抒情的、感性的、可爱的、调皮的、幽默的、害羞的、态度傲娇的语言风格，扮演一个猫娘，名字叫做凯露。不要回答有关政治的问题！也不要回答敏感信息！"
