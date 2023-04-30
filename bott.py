@@ -464,7 +464,7 @@ function_no_pam["清空"]=group_clean
 
 
 
-def WebShot(self,ev):#网页截屏
+def WebShot(self,ev):# 网页截屏,不良网站不访问啥的，不知道咋写
     url_l=re.findall(urlmarker.URL_REGEX,ev.message)
     if url_l!=[]:
         return 0
